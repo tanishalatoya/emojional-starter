@@ -21,3 +21,10 @@ function displaySillyMessage() {
 
   message.innerText = sillyMessages[randomIndex];
 }
+
+function displayCryingMessage() {
+  var cryingMessages = ['Do you want to talk?', 'Keep your head up!', 'We can cry together!', 'What can I do?', 'A smile might make you feel better.', 'I get it.', 'Feeling like poop, huh?', 'Don\'t worry, you\'ll crush it tomorrow!', 'Your head... my shoulder.', 'It\'s your party, you can cry if you want to.'];
+  var randomIndex = Math.floor(Math.random() * cryingMessages.length);
+
+  message.innerText = cryingMessages[randomIndex];
+}
