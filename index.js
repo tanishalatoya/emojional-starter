@@ -1,6 +1,7 @@
 var happyBtn = document.querySelector('.happy');
 var message = document.querySelector('.message');
 var sillyBtn = document.querySelector('.silly');
+var cryingBtn = document.querySelector('.crying');
 
 happyBth.addEventListener('click', displayHappyMessage);
 sillyBtn.addEventListener('click', displaySillyMessage);
