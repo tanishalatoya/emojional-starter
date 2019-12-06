@@ -12,3 +12,10 @@ function displayHappyMessage() {
 
   message.innerText = happyMessages[randomIndex];
 }
+
+function displaySillyMessage() {
+  var sillyMessages = ['Interesting response.', 'Sounds... good?', 'Me too.', 'Doing the silly dance!', 'Um... let me think about that.', 'Ok.', 'Yacko, Wacko, and Dot!', 'Tell me more.', 'Yerp. That\'s a thing.'];
+  var randomIndex = Math.floor(Math.random() * sillyMessages.length);
+
+  message.innerText = sillyMessages[randomIndex];
+}
