@@ -1,9 +1,10 @@
+var cryingBtn = document.querySelector('.crying');
 var happyBtn = document.querySelector('.happy');
 var message = document.querySelector('.message');
 var sillyBtn = document.querySelector('.silly');
-var cryingBtn = document.querySelector('.crying');
+var previousIndex;
 
-happyBth.addEventListener('click', displayHappyMessage);
+happyBtn.addEventListener('click', displayHappyMessage);
 sillyBtn.addEventListener('click', displaySillyMessage);
 cryingBtn.addEventListener('click', displayCryingMessage);
 
@@ -12,7 +13,12 @@ function displayHappyMessage() {
   var happyMessages = ['Go, you!', 'Your smile just cheered me up!', 'YAY!', 'It\'s a great day to be happy!', 'You\'re walking on sunshine over there!', 'Doing the happy dance!', 'Happy, happy, happy!'];
   randomIndex = Math.floor(Math.random() * happyMessages.length);
 
+  if (randomIndex === previousIndex) {
+    randomIndex = Math.floor(Math.random() * happyMessages.length);
+  }
+
   message.innerText = happyMessages[randomIndex];
+  previousIndex = randomIndex;
 }
 
 function displaySillyMessage() {
