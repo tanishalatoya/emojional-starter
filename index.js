@@ -3,6 +3,7 @@ var message = document.querySelector('.message');
 var sillyBtn = document.querySelector('.silly');
 
 happyBth.addEventListener('click', displayHappyMessage);
+sillyBtn.addEventListener('click', displaySillyMessage);
 
 
 function displayHappyMessage() {
