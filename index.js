@@ -1,5 +1,6 @@
 var happyBtn = document.querySelector('.happy');
 var message = document.querySelector('.message');
+var sillyBtn = document.querySelector('.silly');
 
 happyBth.addEventListener('click', displayHappyMessage);
 
