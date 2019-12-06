@@ -1,7 +1,9 @@
 var happyBtn = document.querySelector('.happy');
 var message = document.querySelector('.message');
+var sillyBtn = document.querySelector('.silly');
 
 happyBth.addEventListener('click', displayHappyMessage);
+sillyBtn.addEventListener('click', displaySillyMessage);
 
 
 function displayHappyMessage() {
@@ -9,4 +11,11 @@ function displayHappyMessage() {
   randomIndex = Math.floor(Math.random() * happyMessages.length);
 
   message.innerText = happyMessages[randomIndex];
+}
+
+function displaySillyMessage() {
+  var sillyMessages = ['Interesting response.', 'Sounds... good?', 'Me too.', 'Doing the silly dance!', 'Um... let me think about that.', 'Ok.', 'Yacko, Wacko, and Dot!', 'Tell me more.', 'Yerp. That\'s a thing.'];
+  var randomIndex = Math.floor(Math.random() * sillyMessages.length);
+
+  message.innerText = sillyMessages[randomIndex];
 }
